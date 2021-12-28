@@ -1,15 +1,16 @@
+const generateIntialState = require("./generateBoard");
+const randomNumberGenerator = require("./randomNumberGenerator");
 const mobs = {
     monsters: require("./Json Files/Monsters.json"),
     treasure: require("./Json Files/Treasures.json")
 }
+const {board, health, playerPosition} = generateIntialState();
+console.log(board);
 /**
  * 
  * @param {number*} maximum 
  * @returns {number} random number
  */
-function randomNumberGenerator(maximum) {
-    return Math.floor(Math.random() * maximum);
-}
 /**
  * 
  * @param {matrix} board 
