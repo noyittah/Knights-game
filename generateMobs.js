@@ -2,7 +2,6 @@ const mobs = {
     monsters: require("./Json Files/Monsters.json"),
     treasure: require("./Json Files/Treasures.json")
 }
-const board = Array(100).fill(Array(100));
 /**
  * 
  * @param {number*} maximum 
