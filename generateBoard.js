@@ -5,10 +5,11 @@ const generateBoard = () => {
     return board;
 }
 function generateIntialState() {
+    const board = generateBoard();
     return {
-        board: generateBoard(generateBoard()),
+        board: board,
         health: 100,
-        playerPosistion: [0,0]
+        playerPosition: [randomNumberGenerator(board.length - 1),randomNumberGenerator(board.length - 1)]
     }
 }
 module.exports = generateIntialState;

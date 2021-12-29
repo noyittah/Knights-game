@@ -5,7 +5,6 @@ const mobs = {
     treasure: require("./Json Files/Treasures.json")
 }
 const {board, health, playerPosition} = generateIntialState();
-console.log(board);
 /**
  * 
  * @param {number*} maximum 
@@ -58,6 +57,6 @@ function generateMob(board) {
     for (let mobsAmount = board.length * 2; mobsAmount > 0; mobsAmount--) {
         insertItem(board);
     }
-    return board;
+    return { board, health, playerPosition};
 }
-generateMob(board);
+module.exports = generateMob(board);
