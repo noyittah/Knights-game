@@ -220,3 +220,5 @@ if(step ===  '2')
         }
 return arr;
 }
+
+module.exports = doMove;
