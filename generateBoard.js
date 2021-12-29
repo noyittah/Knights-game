@@ -14,5 +14,3 @@ function generateIntialState() {
 }
 module.exports = generateIntialState;
 
-
-
